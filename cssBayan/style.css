@@ -47,6 +47,14 @@ body {
     padding-bottom: 0.3125rem;
 }
 
+#meme1:active ~ .meme-button,
+#meme2:active ~ .meme-button,
+#meme3:active ~ .meme-button,
+#meme4:active ~ .meme-button,
+#meme5:active ~ .meme-button {
+    opacity: 0.5;
+}
+
 .meme-one,
 .meme-two,
 .meme-three,
@@ -58,6 +66,16 @@ body {
 .main-container:hover .meme-title {
     color: #000;
 }
+
+#meme1:checked ~ .meme-button > .meme-plus > .plus,
+    #meme2:checked ~ .meme-button > .meme-plus > .plus,
+    #meme3:checked ~ .meme-button > .meme-plus > .plus,
+    #meme4:checked ~ .meme-button > .meme-plus > .plus,
+    #meme5:checked ~ .meme-button > .meme-plus > .plus {
+        transform: rotate(45deg);
+        transition: 0.01s;
+}
+
 .memes:hover {
     cursor: pointer;
 }
@@ -96,4 +114,20 @@ body {
 } 
 .meme-button:hover {
     cursor: pointer;
+}
+
+#meme1:checked ~ .meme-button > .meme-image1,
+#meme2:checked ~ .meme-button > .meme-image2,
+#meme3:checked ~ .meme-button > .meme-image3,
+#meme4:checked ~ .meme-button > .meme-image4,
+#meme5:checked ~ .meme-button > .meme-image5 {
+    display: block;
+}
+
+#meme1:active ~ .meme-button > .meme-plus > .meme-title,
+#meme2:active ~ .meme-button > .meme-plus > .meme-title,
+#meme3:active ~ .meme-button > .meme-plus > .meme-title,
+#meme4:active ~ .meme-button > .meme-plus > .meme-title,
+#meme5:active ~ .meme-button > .meme-plus > .meme-title {
+    color: blue;
 }
