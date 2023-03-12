@@ -54,3 +54,46 @@ body {
     padding-bottom: 0.3125rem;
     border-bottom: 0.125rem solid #c6c8ca;
 }
+
+.main-container:hover .meme-title {
+    color: #000;
+}
+.memes:hover {
+    cursor: pointer;
+}
+.meme-one:hover .meme-image1,
+.meme-two:hover .meme-image2,
+.meme-three:hover .meme-image3,
+.meme-four:hover .meme-image4,
+.meme-five:hover .meme-image5 {
+    display: block;
+    cursor: pointer;
+    animation-name: meme;
+    animation-duration: 1s;  
+}
+.memes:hover .plus {
+    content: "";
+    display:inline-block;
+    padding-left: 0.0625rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    background:
+      linear-gradient(#000, #000),
+      linear-gradient(#000, #000);
+    background-position:center;
+    background-size: 50% 0.1875rem, 0.1875rem 50%; 
+    background-repeat:no-repeat;
+    border: none;
+    transition: 0.1s;
+}
+.meme-one:hover .plus,
+.meme-two:hover .plus,
+.meme-three:hover .plus,
+.meme-four:hover .plus,
+.meme-five:hover .plus {
+     transform: rotate(45deg);
+     transition: 0.01s;
+} 
+.meme-button:hover {
+    cursor: pointer;
+}
