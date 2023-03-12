@@ -221,3 +221,19 @@ body {
         background-size: 40% 0.09rem, 0.09rem 40%;
     }
 }
+
+@media (hover: hover) and (max-width: 820px) {
+    .memes:hover .plus {
+        width: 1rem;
+        height: 1rem;
+        background-size: 40% 0.12rem, 0.12rem 40%;
+    } 
+}
+
+@media (hover: hover) and (max-width: 320px) {
+    .memes:hover .plus {
+        width: 0.8rem;
+        height: 0.8rem;
+        background-size: 40% 0.09rem, 0.09rem 40%;
+    } 
+}
