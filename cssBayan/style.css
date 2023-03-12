@@ -131,3 +131,32 @@ body {
 #meme5:active ~ .meme-button > .meme-plus > .meme-title {
     color: blue;
 }
+
+@media (max-width: 820px)  {
+    .title {
+        font-size: 1.15rem;
+    }
+    .meme-title {
+        font-size: 0.7rem;
+    }
+    .plus {
+        width: 1rem;
+        height: 1rem;
+        background-size: 40% 0.12rem, 0.12rem 40%;
+    }
+}
+
+/*mobile версия Bayan*/
+@media (max-width: 320px)  {
+    .title {
+        font-size: 0.9rem;
+    }
+    .meme-title {
+        font-size: 0.5rem;
+    }
+    .plus {
+        width: 0.8rem;
+        height: 0.8rem;
+        background-size: 40% 0.09rem, 0.09rem 40%;
+    }
+}
