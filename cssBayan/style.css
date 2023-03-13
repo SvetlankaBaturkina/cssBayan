@@ -56,7 +56,7 @@ body {
 }
 
 .meme-dot {
-    display: none;
+    visibility: hidden;
     width: 0;
     height: 0;
 }
@@ -66,12 +66,13 @@ body {
 .meme-image3,
 .meme-image4,
 .meme-image5 {
-    display: none;
+    visibility: hidden;
+    width: 0%;
 }
 
 .image {
     display: block;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -80,7 +81,9 @@ body {
 #meme3:checked ~ .meme-button > .meme-image3,
 #meme4:checked ~ .meme-button > .meme-image4,
 #meme5:checked ~ .meme-button > .meme-image5 {
-    display: block;
+    visibility: visible;
+    width: 50%;
+    margin: 0 auto;
     animation-name: meme;
     animation-duration: 1s; 
     
@@ -132,7 +135,9 @@ body {
     .meme-three:hover .meme-image3,
     .meme-four:hover .meme-image4,
     .meme-five:hover .meme-image5 {
-        display: block;
+        visibility: visible;
+        width: 50%;
+        margin: 0 auto;
         cursor: pointer;
         animation-name: meme;
         animation-duration: 1s;  
